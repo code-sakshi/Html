@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> String Method </title>
+</head>
+<body>
+    <h2 id="demo"> </h2>
+    <h2 id="text"> we are learning Javascript </h2>
+    <button onclick="uppertext()">Click</button>
+    <script>
+        //String
+
+      let s = "   Hello Learners   ";
+      let str='Learn \
+                      Javascript';
+
+        let x = 'It\'s Monday';
+        let y = "My name is \"sakshi\"";
+        let z = "My name is 'Admin'";
+        let m = s.trim();
+        document.getElementById('demo').innerHTML = z.length;
+        
+        //String Extraction
+
+        let str1 = "we are learning Javascript";
+
+        //slice method
+        document.getElementById('demo').innerHTML = str1.slice(16,20);
+        document.getElementById('demo').innerHTML = str1.slice(7);
+        document.getElementById('demo').innerHTML = str1.slice(-10, -6);  
+
+        //substring method
+
+        document.getElementById('demo').innerHTML = str1.substring(10,5);
+        document.getElementById('demo').innerHTML = str1.substring(9);
+        document.getElementById('demo').innerHTML = str1.substring(3,6);
+        document.getElementById('demo').innerHTML = str1.substring(9);
+        document.getElementById('demo').innerHTML = str1.substring(-10,-6);
+
+        //substr method
+
+        document.getElementById('demo').innerHTML = str1. substr(7,5);
+
+        //string Concatination
+
+        document.getElementById('demo').innerHTML = s.concat(str1);
+        document.getElementById('demo').innerHTML = s + x + "  and today " + str1;
+
+       // String Replace
+
+      // document.getElementById('demo').innerHTML  = str1.replace("Javascript","React")
+
+     function replacetext()
+     {
+        let x = document.getElementById('text').innerHTML;
+        //document.getElementById('text').innerHTML = x.replace("Javascript","React");
+       // document.getElementById('text').innerHTML = x.replace(/Javascript/i,"React");
+        //document.getElementById('text').innerHTML = x.replace(/Javascript/g,"React");
+        document.getElementById('text').innerHTML = x.replace("Javascript","React");
+     }
+      
+      function lowertext()
+      {
+         let y = document.getElementById('text').innerHTML;
+         document.getElementById('text').innerHTML = y.toLowerCase();
+      }
+
+      function uppertext()
+      {
+        let x = document.getElementById('text').innerHTML;
+        document.getElementById('text').innerHTML = x.toUpperCase();
+        }
+
+        let str2 = "String Methods";
+
+        document.getElementById('demo').innerHTML = str2.charAt(4);
+        document.getElementById('demo').innerHTML = str2.indexOf("i");
+        document.getElementById('demo').innerHTML = str.at(-4);
+        document.getElementById('demo').innerHTML = str2.charCodeAt(0);
+
+        let str3 = 'Hello'
+
+       // document.getElementById('demo').innerHTML = str3.padEnd(15,'o');
+       document.getElementById('demo').innerHTML = str3.padStart(7,'!');
+       
+</script>
+</body>
+</html>

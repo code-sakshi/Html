@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+</head>
+<body>
+    <h1>Javascript Error</h1>
+    <p id="demo()"> </p>
+    <p id="msg"> </p>
+    <p id="text"> </p>
+
+    <script>
+
+        let x= 100;
+        let y= 0;
+         let div=x/y;
+         document.getElementById('demo').innerHTML=div;
+
+       try{
+        addalert ("Welcome user");
+       }
+       catch(err)
+       {
+        document.getElementById('msg').innerHTML=err.message;
+
+       }
+       finally
+       {
+        document.getElementById('text').innerHTML="Finally keyword";
+       }
+       //document.getElementById('demo').innerHTML="hello user";
+</script>
+</body>
+</html>

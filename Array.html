@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Javascript Array </title>
+</head>
+<body>
+    <h2> Javascript Array</h2>
+    <h2 id="demo1"> </h2>
+    <h2 id="demo"> </h2>
+
+    <script>
+        const color= ['Black','Red','Blue','Green','Orange','Pink'];
+
+        document.getElementById('demo').innerHTML=color;
+
+        document.getElementById('demo').innerHTML=color.length;
+        document.getElementById('demo').innerHTML=color[4];    // priting specific array element
+        document.getElementById('demo').innerHTML=color[color.length-1];    //  priting last arry
+
+        document.getElementById('demo1').innerHTML=color;
+      //color.pop();      // removing last array element
+      //color.push();     // adding last array element
+      //color.shift();      //removing first array element
+     // color.unshift("silver");    //adding first array element
+       
+    // color[2] = 'purple';    //replace the array element
+     
+     //color.splice(3,2);      //deletes specific element
+     //color.splice(2,0,'Indigo','Voilet','Skyblue');    //adds element at specific position
+      // color.splice(4,1,'white');
+
+      //color.sort();    //Accending Order
+      //color.reverse();    //decending Oreder - reverse array element
+
+      document.getElementById('demo1').innerHTML=color;
+      
+       //const rainbow=color.slice(1,5);   //creating new array from existing array
+
+      document.getElementById('demo').innerHTML=rainbow;
+      
+
+    </script>
+</body>
+</html>

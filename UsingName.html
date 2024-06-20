@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM UsingName</title>
+    <script>
+        function bodyload()
+        {
+            pic2.src="https://cdn.pixabay.com/photo/2023/10/15/11/38/street-8316703_640.jpg";
+            regform.regbtn.value="Register";
+            loginform.loginbtn.value="Login";
+
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+
+    <h2> DOM UsingName</h2>
+    <img border="1" height="200px" width="200px" name="pic1">
+    <img border="1" height="200px" width="200px" name="pic2">
+
+    <form name="regform">
+        <h3>Registration Form</h3>
+        <input type="text" name="username">
+        <input type="button" name="regbtn">
+    </form>
+
+    <form name="loginform!">
+        <h3>Registration Form</h3>
+        <input type="text" name="emailID">
+        <input type="button" name="loginbtn">
+    </form>
+</body>
+</html>

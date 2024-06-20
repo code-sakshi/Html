@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Wedding Planner Website  </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">"
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icons?family=Material+Icons">
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  :root{
+    color1:blue;
+    color2:red;
+    color3:white;
+    color4:black;
+    color5:lightgray;
+    color6:yellow;
+  }      
+  .
+  {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'pT sans',sans-serif;
+    border: none;
+  }
+  html{
+    font-size: 56%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  html::-webkit-scrollbar
+  {
+    width: 1rem;
+  }
+  html::-webkit-scrollbar-thumb
+  {
+    background:blue;
+  }
+  section{
+    padding: 7rem 9%;
+    margin-top:7rem;
+  }
+  .head
+  {
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 1000px;
+    background:blue;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .fa-heart
+  {
+    color:red;
+  }
+  .head.logo
+  {
+    font: size 2.5em;
+    color:white;
+    font-weight: 600;
+    letter-spacing: 1em;
+  }
+  span{
+    color:lightgray;
+  }
+  head.navbar
+  {
+    font-size: 1.8em;
+    justify-content: space-between;
+    font-weight: 500;
+  }
+  .head .navbar a{
+    padding-left: 1.5em;
+    color:white;
+  }
+  #menu-bar{
+    display: none;
+    color:white;
+  }
+  .home{
+    background: linear-gradient(black),(black)url=("https://tse1.mm.bing.net/th?id=OIP.ogrs2Cr8hRmm_lFGLbzPoQHaHa&pid=Api&P=0&h=180");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+  .search-box{
+    margin: 20rem 0 0 0;
+    color: white;
+    text-align: center;
+  }
+  .search-box h1{
+    font-size: 5.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 2rem;
+  }
+    </style>
+</head>
+<body>
+    
+    <header class="head">
+        <a href="" class="logo"><i class="fa fa-heart"></i>&nbsp;Wed<span>Me</span>Good&nbsp;<i class=" fa fa-heart"></i></a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Service</a>
+            <a href="#">Vendor</a>
+            <a href="#">Venue</a>
+            <a href="#">Invites</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div id="menu-bar"><i class="fa fa-bars"></i></div>
+    </header>
+    <section id="home" class="home"home  style="background-image: url("https://tse1.mm.bing.net/th?id=OIP.ogrs2Cr8hRmm_lFGLbzPoQHaHa&pid=Api&P=0&h=180");>
+    
+      <form action="a">
+        <div class="search-box">
+        <h1>Your Wedding,Your Way</h1>
+        <p>Find The Best Wedding Vendors With Thaousands Of Trusted Reviews</p>
+
+        <select type="text" class="search-field">
+          <option disabled selected>Select Vendor type</option>
+          <option value="Wedding Venues">Wedding Venues </option>
+          <option value="Family Makeup">Family Makeup </option>
+          <option value="Bridal Makeup">Bridal Makeup</option>
+          <option value="Groom Wear">Groom Wear </option>
+          <option value="Wedding Decoration">Wedding Decoration</option>
+        </select>
+
+        <select type="text" class="search-field">
+          <option disabled selected>City</option>
+          <option value="Manali">Manali </option>
+          <option value="Ahemdabad">Ahemdabad </option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Baroda">Baroda </option>
+          <option value="Goa">Goa</option>
+        </select>
+        <button class="btn">search</button>
+      </div>
+      </form>
+    </section>
+</body>
+</html>

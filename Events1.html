@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Event </title>
+    <style>
+        div{
+
+            border: 1px solid black;
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body onunload="checkCookies()">
+
+    <p id="cookies"> </p>
+    <button onclick="checkCookies()"> check cookies</button>
+    <button onclick="chngcolor(this)"> save </button>
+    <br><br>
+    <input type="text" id="txt" value="admin" onchange="entervalue()"><br><br>
+
+    <input onfocus="chngcolor(this)">
+
+    <div onmouseover="redcolor(this)" onmouseout="whitecolor(this)" onmouseup="mouseup(this)"></div>
+    <script>
+        function redcolor(x)
+        {
+            x.style.background="red";
+        }
+
+        function whitecolor(x)
+        {
+            x.style.background="white";
+        }
+        function clickdown(x)
+        {
+            x.innerHTML="Mouse Down";
+        }
+        function entervalue()
+        {
+            var val= document.getElementById("txt");
+            val.value=val.value.toUpperCase();
+                }
+        function chngtext()
+        {
+            document.getElementById("demo1").innerHTML="HTML";
+        }
+       
+        function chngcolor(x)
+        {
+            x.style.background="yellow";
+            x.style.border='3px solid red';
+        }
+
+        function ddate()
+        {
+            document.getElementById("demo").innerHTML=Date();
+        }
+
+        function checkCookies()
+        {
+            var text= ' ';
+            if(navigator.cookieEnabled==true )
+            {
+                text = "cookies are enbled";
+            }
+            else
+            {
+               text = "cookies are not enbled";
+
+            }
+            document.getElementById("cookies").innerHTML = text;
+        }
+        function mouseover(obj)
+        {
+            obj.innerHTML= "mouse over!!!!";
+        }
+        function mouseout(obj)
+        {
+        obj.innerHTML="mouse out";
+        }
+        function mouseup(obj)
+        {
+            obj.innerHTML="mouse up";
+        }
+        function mousedown(obj)
+        {
+            obj.innerHTML = "mouse down";
+        }
+        function overimg()
+        {
+            document.getElementById('img').src = 'https://tse1.mm.bing.net/th?id=OIP.a4nWKkodWyCR8G02DwNtNQHaE7&pid=Api&rs=1&c=1&qlt=95&w=153&h=102';
+        }
+        function outimg()
+        {
+            document.getElementById('img').src='https://tse1.mm.bing.net/th?id=OIP.j7SGdje4XYfBOmDxYZi7vwHaE5&pid=Api&rs=1&c=1&qlt=95&w=176&h=116';
+            
+        }
+    </script>
+</body>
+</html>

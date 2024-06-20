@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gallery page</title>
+   
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          padding: 20px;
+      }
+
+      h1 {
+          text-align: center;
+          margin-bottom: 30px;
+          color: #333;
+      }
+
+      .gallery {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 20px;
+      }
+
+      .gallery-item {
+          position: relative;
+          overflow: hidden;
+          border-radius: 5px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover {
+          transform: scale(1.05);
+      }
+
+      .gallery-item img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover img {
+          transform: scale(1.1);
+      }
+
+      .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background-color: rgba(0, 0, 0, 0.6);
+          color: #fff;
+          opacity: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: opacity 0.3s ease;
+      }
+
+      .gallery-item:hover .overlay {
+          opacity: 1;
+      }
+
+      .overlay-content {
+          text-align: center;
+      }
+
+      .overlay-content h3 {
+          font-size: 20px;
+          margin-bottom: 10px;
+      }
+
+      .overlay-content p {
+          font-size: 16px;
+          margin-bottom: 20px;
+      }
+  </style>
+
+</head>
+<body>
+    
+  <h1>Wedding Gallery</h1>
+  <div class="gallery">
+      <div class="gallery-item">
+          <img src="https://tse2.mm.bing.net/th?id=OIP.EUB5ZmsDJTxmfTL4z5oYLgHaEK&pid=Api&P=0&h=180" alt="Wedding Photo 1">
+          <div class="overlay">
+              <div class="overlay-content">
+                  
+                
+              </div>
+          </div>
+      </div>
+      <div class="gallery-item">
+          <img src="https://tse4.mm.bing.net/th?id=OIP.oH1K3gl-vN0Sfp6Svaa-_wHaE8&pid=Api&P=0&h=180" alt="Wedding Photo 2">
+          <div class="overlay">
+              <div class="overlay-content">
+              </div>
+          </div>
+      </div>
+
+  <div class="gallery-item">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.fGa9Q695YKUU2KVyKLG9WgAAAA&pid=Api&P=0&h=180" alt="Wedding Photo 2">
+  <div class="overlay">
+  <div class="overlay-content">
+  </div>
+</div>
+</div>
+
+  <div class="gallery-item">
+  <img src="https://tse3.mm.bing.net/th?id=OIP.0IM7zMUGIQoOjvHrH58g-AHaE8&pid=Api&P=0&h=180" alt="Wedding Photo 2">
+  <div class="overlay">
+  <div class="overlay-content">
+  </div>
+</div>
+</div>
+
+    <div class="gallery-item">
+  <img src="https://tse1.mm.bing.net/th?id=OIP.m1l8ton0yUSRqIYV6RixNgHaEm&pid=Api&P=0&h=180" alt="Wedding Photo 2">
+   <div class="overlay">
+   <div class="overlay-content">
+  </div>
+</div>
+</div>
+
+     <div class="gallery-item">
+    <img src="https://tse3.mm.bing.net/th?id=OIP.vENe0jXu5XmdoQxIHgP-oQHaFi&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+    <div class="overlay">
+  <div class="overlay-content">
+                 
+              </div>
+          </div>
+      </div>
+
+      <div class="gallery-item">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.qhXgPjJr0h1HAvyLnif18wHaE8&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+          <div class="overlay">
+        <div class="overlay-content">
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="https://tse1.mm.bing.net/th?id=OIP.5ji4FLN2TC3bV6HnMbpEwQHaE8&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+              <div class="overlay">
+            <div class="overlay-content">
+                           
+                        </div>
+                    </div>
+                </div>
+
+      <div class="gallery-item">
+       <img src="https://tse4.mm.bing.net/th?id=OIP.gV4m-e6n5UgInYYHwftRVAHaEe&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+       <div class="overlay">
+       <div class="overlay-content">
+                               
+        </div>
+        </div>
+       </div>
+
+<div class="gallery-item">
+<img src="https://tse4.mm.bing.net/th?id=OIP.jDFOrhcUNuADvCRR-RwOtQHaE7&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+<div class="overlay">
+<div class="overlay-content">
+                                   
+       </div>
+       </div>
+       </div>
+
+<div class="gallery-item">
+<img src="https://tse4.mm.bing.net/th?id=OIP.IOprqYfiAdcWPK5FUy6VjwHaE8&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+<div class="overlay">
+<div class="overlay-content">
+                                       
+  </div>
+   </div>
+</div>          
+
+   <div class="gallery-item">
+    <img src="https://tse3.mm.bing.net/th?id=OIP.7qMIm-nFAeEOro_i7fUz0wHaEv&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+    <div class="overlay">
+    <div class="overlay-content">
+                                           
+</div>
+</div>
+</div>
+       
+   <div class="gallery-item">
+   <img src="https://tse4.explicit.bing.net/th?id=OIP.l42j3Q0rOcE6LS4gUYQtUAHaFj&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+  <div class="overlay">
+  <div class="overlay-content">             
+                                               
+  </div>
+</div>
+</div>
+
+  <div class="gallery-item">
+  <img src="https://tse1.mm.bing.net/th?id=OIP._fPF6sHFSs9w0-a44L64sgHaE8&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+  <div class="overlay">
+   <div class="overlay-content">
+                                                   
+   </div>
+  </div>
+  </div>     
+  
+  <div class="gallery-item">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.b62Ktei9G9NxOxLrW9ihiQHaE8&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+      <div class="overlay">
+       <div class="overlay-content">
+                                                       
+       </div>
+      </div>
+      </div>   
+
+      <div class="gallery-item">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.h8fOmzHq_5l8Z4lDsFIsngHaE7&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+          <div class="overlay">
+           <div class="overlay-content">
+                                                           
+           </div>
+          </div>
+          </div>   
+
+          <div class="gallery-item">
+              <img src="https://tse4.mm.bing.net/th?id=OIP.VvDK6_ikbkc9tE7-5Z4T2wHaE7&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+              <div class="overlay">
+               <div class="overlay-content">
+                                                               
+               </div>
+              </div>
+              </div>   
+
+              <div class="gallery-item">
+                  <img src="https://tse2.mm.bing.net/th?id=OIP.XhrF_vu_opPjGaFnTMcoYwHaE6&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+                  <div class="overlay">
+                   <div class="overlay-content">
+                                                                   
+                   </div>
+                  </div>
+                  </div>   
+
+                  <div class="gallery-item">
+                      <img src="https://tse2.mm.bing.net/th?id=OIP.iaRHKEzibBZqdkHtrvEDJAHaE8&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+                      <div class="overlay">
+                       <div class="overlay-content">
+                                                                       
+                       </div>
+                      </div>
+                      </div>   
+
+                      <div class="gallery-item">
+                          <img src="https://tse3.mm.bing.net/th?id=OIP.A9Y82dx1hUinFtRjA4SgpQHaE8&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+                          <div class="overlay">
+                           <div class="overlay-content">
+                                                                           
+                           </div>
+                          </div>
+                          </div>   
+
+<div class="gallery-item">
+<img src="https://tse4.mm.bing.net/th?id=OIP.BHABYL-M--gE8a-ZurjKDgHaFQ&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+  <div class="overlay">
+   <div class="overlay-content">
+                                                                               
+</div>
+</div>
+</div>   
+
+<div class="gallery-item">
+<img src="https://tse1.mm.bing.net/th?id=OIP.RvbGZv-Vk9BRy4n0OZRSkQHaEi&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+   <div class="overlay">
+  <div class="overlay-content">
+                                                                                   
+</div>
+   </div> </div>   
+
+  <div class="gallery-item">
+<img src="https://tse2.mm.bing.net/th?id=OIP.PGUC-Abe94UE_okRoLP4xAHaE7&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+  <div class="overlay">
+    <div class="overlay-content">
+                                                                                       
+ </div>
+   </div>
+   </div>   
+
+  <div class="gallery-item">
+    <img src="https://tse3.mm.bing.net/th?id=OIP.FgTFrap2rmua9JmKONsLHgHaEc&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+   <div class="overlay">
+    <div class="overlay-content">
+                                                                                           
+    </div>
+   </div>
+   </div>   
+
+<div class="gallery-item">
+<img src="https://tse1.mm.bing.net/th?id=OIP.oKe1sUlZQrAxVrocUuxkUgHaE-&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+<div class="overlay">
+<div class="overlay-content">
+                                                                                               
+  </div>
+   </div>
+  </div>   
+
+  <div class="gallery-item">
+   <img src="https://tse1.mm.bing.net/th?id=OIP.pKIle7TLoMXQX7ap--SZlgHaEY&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+   <div class="overlay">
+       <div class="overlay-content">
+                                                                                                   
+   </div>
+    </div>
+    </div>   
+
+  <div class="gallery-item">
+  <img src="https://tse2.mm.bing.net/th?id=OIP.KLJo396qnaU6agM7f8N4swAAAA&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+   <div class="overlay">
+  <div class="overlay-content">
+                                                                                                       
+  </div>
+  </div>
+  </div>   
+
+<div class="gallery-item">
+<img src="https://tse1.mm.bing.net/th?id=OIP.oKe1sUlZQrAxVrocUuxkUgHaE-&pid=Api&P=0&h=180" alt="Wedding Photo 2">
+<div class="overlay">
+<div class="overlay-content">
+                                                                                                           
+</div>
+</div>
+</div>   
+
+<div class="gallery-item">
+<img src="https://tse4.mm.bing.net/th?id=OIP.fL3Cvroa6cEekcgHQhW_pgHaE7&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+<div class="overlay">
+<div class="overlay-content">
+
+</div>
+</div>
+</div>                                                                 
+
+<div class="gallery-item">
+  <img src="https://tse1.mm.bing.net/th?id=OIP.ot8YoL4s73SrdJbyLVSxYAEyDM&pid=Api&P=0&h=180" alt="Wedding Photo 2 ">
+   <div class="overlay">
+   <div class="overlay-content">
+  
+  </div>
+   </div>
+   </div>  
+                       
+      <!-- Add more gallery items as needed -->
+  </div>
+</body>
+</html>

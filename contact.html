@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Contact Us Pages</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/skins/pink.css">
+  <link rel="https://fonts.googleapis.com/css2?family=Great+Vibes&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">"
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icons?family=Material+Icons">
+<style>
+ *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+ }
+ :root
+ {
+  --bodyBg:gray;
+  --formBg:black;
+  --textColor:white;
+  --primaryColor:blue;
+  --paraColor:green;
+  --paraColor: darkslategrey;
+ 
+ }
+ body{
+  font-family: 'Roboto serif',serif;
+  color: var(--textColor);
+  background-color: var(--bodyBg);
+  padding-bottom: 5em;
+ }
+ section
+ {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+  max-width: 550px;
+  margin: auto;
+  margin-top: 2em;
+
+ }
+ .sectionheader
+ {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--primaryColor);
+  margin-bottom: .5em;
+ 
+ }
+ .heading,.sub-heading
+ {
+  margin-bottom: .5em;
+  font-weight: bold;
+ }
+ .sub-heading
+ {
+  text-align: left;
+ }
+ .contactform
+ {
+     display: grid;
+     gap: 3em;
+     margin-top: 3em;
+ }
+ .para
+ {
+  color: var(--paraColor);
+  font-size: 1.1rem;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+ }
+ .para2
+ {
+  text-align: left;
+ }
+ form
+ {
+  width: 90%;
+ }
+ .input
+ {
+  width: 95%;
+  max-width: 700px;
+  border: none;
+  font-size: .9rem;
+  padding: 1em;
+  outline: none;
+  margin-bottom: 1em;
+  background-color: var(--formBg);
+  color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+ }
+ .input:focus
+ {
+  border: 1px solid var(--primaryColor);
+
+ }
+ .input::placeholder
+ {
+  text-transform: capitalize;
+ }
+ .submit
+ {
+  background-color: var(--primaryColor);
+  border: none;
+  color: var(--textColor);
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+ }
+ .map-container
+ {
+  position:relative;
+  width: 50%;
+  height: 500px;
+  
+ }
+ .mapBg
+ {
+  position: absolute;
+  background-color: var(--primaryColor);
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 90%;
+  border-radius: 20px;
+
+ }
+ .map-container{
+position: relative;
+bottom: 0;
+left: 0;
+width: 90%;
+height: 90%;
+
+
+ }
+ .map iframe
+ {
+  width: 100%;
+  height: 100%;
+
+ }
+ .contactMethod
+ {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  text-align: left;
+ }
+ .contactMethod{
+  display: flex;
+  align-items:center;
+ }
+ .contactIcon
+ {
+  font-size: 2rem;
+  color: var(--primaryColor);
+  width: 70px;
+ }
+ @media screen and (min-width:800px) {
+  section{
+    max-width: 1100px;
+  }
+  .contactform
+  {
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+  .contactMethod
+  {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+ }
+</style>
+</head>
+<body>
+  <section>
+    <h4 class="sectionheader"> Contact Us</h4>
+    <h1 class="heading">Get In Touch!</h1>
+    <p class="para"> Lorem ipsum dolor sit amet consectetur adipis inventore omnis aliquid rerum alias molestias.</p>
+
+    <div class="contactform">
+      <form action="#">
+        <h1 class="sub-heading"> Need Support!</h1>
+        <p class="para para2">
+          Contact Us for a quote ,help to join the them.
+        </p>
+
+        <input type="text" class="input" placeholder="Your Name">
+        <input type="text" class="input" placeholder="Your Email">
+        <input type="text" class="input" placeholder="Your Subject">
+        <textarea class="input" cols="30" rows="5"></textarea>
+        <input type="text" class="input submit" value="Send Message">
+      </form>
+      <div class="map-container">
+      <div class="mapBg"></div>
+      <div class="map"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15133.142755318984!2d73.91521670533646!3d18.515987622384333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c18d3fd3454d%3A0x38ae6b1008a0d0c4!2sMagarpatta%2C%20Hadapsar%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1710852746471!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="contactMethod">
+    
+   <div class="method">
+      <i class="fa fa-map-marker"></i>
+      <article class="text">
+        <h1 class="sub-heading"> Location</h1>
+        <p class="para">Magarpatta City IT Park</p>
+      </article>
+    </div>
+
+    <div class="method">
+      <i class="fa fa-envelope"></i>
+      <article class="text">
+        <h1 class="sub-heading"> Email</h1>
+        <p class="para">Programmingcode2021@gmail.com</p>
+      </article>
+    </div>
+
+    <div class="method">
+      <i class="fa fa-phone"></i>
+      <article class="text">
+        <h1 class="sub-heading"> Phone </h1>
+        <p class="para">020 2634 2797</p>
+      </article>
+    </div>
+    </div>
+  </section>
+</body>
+</html>

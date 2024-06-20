@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  QuerySelector</title>
+
+    <script>
+        function bodyload()
+        {
+           // document.querySelector('.regbtn').value="Button";
+             document.querySelector('#btnlogin').value="Login";
+        }
+    </script>
+</head>
+<body onclick="bodyload()">
+    
+    <form>
+        <h3> Registration Form </h3>
+        <input type="text" name="username">
+        <input type="button" id="btnreg" class="regbtn">
+    </form>
+
+    <form>
+        <h3> Login Form</h3>
+        <input type="text" name="username">
+        <input type="button" id="btnlogin" class="regbtn">
+    </form>
+    <img border="1" height="200px" width="200px" id="img1">
+    <img border="1" height="200px" width="200px" id="img2"> 
+</body>
+</html>

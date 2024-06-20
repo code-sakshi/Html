@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    .container
+    {
+        min-height: 300px;
+        width: 100%;
+      background-color: antiquewhite;
+    }
+    .service-wrapper
+    {
+        padding: 5% 8%;
+    }
+    .service{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        color: black;
+        font-size:3rem;
+    }
+    .cards
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    .card{
+            height: 350px;
+            width: 420px;
+          
+            padding: 3% 8%;
+            border-radius: 8px;
+            transition: 0.6;
+    }
+    .card i{
+        color: red;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        font-size:2.5rem;
+    }
+    .card h3{
+        color:black;
+        font-size: 20px;
+        margin: 10px 0;
+        font-weight: 500;
+        text-align: center;
+        box-shadow: 4px 7px 7px 0px black;
+    }
+    .card p{
+        text-align: center;
+        width: 100%;
+        margin: 20px 10px;
+        box-shadow: 4px 7px 7px 0px black;
+    }
+    .card :hover
+    {
+        background: linear-gradient(red);
+    }
+    .container .btn
+    {
+        margin: 40px 0 70px 0;
+        background: black;
+    text-align: center;
+    padding: 15px 40px;
+    border-radius: 5px;
+    }
+   </style>
+</head>
+<body>
+    <div class="container">
+     <div class="service-wrapper">
+       <div class="service">
+        <h1> Key Packages For Wedding Planning Service</h1>
+        <div class="cards">
+
+            <div class="card">
+           
+                    <i class="fa fa-service"></i>
+                    <h3>Bronze<br>$15000</h3>
+                    <p>Venue Sourcing<br>Catering Suppliers<br>Bridal Dressing<br>Transportation Facility<br>Wedding Schedules&Decore Advice<br>Add text here</p>
+                
+                </div>
+           
+            <div class="card">
+           
+                    <i class="fa fa-service"></i>
+                    <h3>Silver<br>$30000</h3>
+                    <p>Venue Sourcing<br>Invitation Card<br>Catering Suppliers<br>Bridal Dressing<br>Groomsman Suit Hire<br>Cake&Beverage Arrangement<br>All Wedding Paperwork &Legalities<br>Transportation Facility<br>Wedding Schedules&Decore Advice<br>Add text here</p>
+                
+                </div>
+
+            <div class="card">
+                
+                    <i class="fa fa-service"></i>
+                    <h3>Golden<br>$50000</h3>
+                    <p>Venue Sourcing<br>Invitation Card<br>Catering Suppliers<br>Bridal Dressing<br>Groomsman Suit Hire<br> Cake&Beverage Arrangement<br>All Wedding Paperwork &Legalities<br>Transportation Facility<br>Wedding Schedules&Decore Advice<br>Wdding Co-Ordinators<br>Customized Wedding Ring<br>Add text here</p>
+                
+            </div>
+          
+        </div>
+    </div>
+</div>
+
+<div class="btn">
+    <a href="#">More</a>
+   </div>
+
+</div>
+</body>
+</html>

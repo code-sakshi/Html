@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .aa{
+            background-color: bisque;
+        }
+        .icon {
+            position: relative;
+            /* left: 500px;   */
+            top: 20px; 
+            margin-right:700px;
+            margin-left: 20px;
+            
+        }
+
+        .plant{
+            margin: 0px 20px;
+            text-align: center;
+
+        }
+        .content{
+            position: relative;
+            top:10px;
+        }
+        .search{
+            margin-left: 1000px;
+            margin-right: 10px;
+            margin-top: 10px;
+            /* margin-bottom: 55px; */
+        }
+        .main{
+            position: relative;
+            /* left: 1000px; */
+            bottom: 100px; 
+            margin-left: 1400px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            transition: 1s;
+
+        }
+        /* .container:hover{
+            transform: scale(0.9);
+            transition: 1s;
+        } */
+        .container-menu{
+            position: relative;
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            transition: 1s;
+        }
+        .container-menu:hover{
+            transform: scale(0.9);
+        }
+        .img{
+            position: relative;
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            transition: 1s;
+        }
+        .img:hover{
+            transform: scale(0.9);
+        }
+        .image{
+            position: relative;
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            transition: 1s;
+        }
+        .image:hover{
+            transform: scale(0.9);
+        }
+        .row{
+            position: relative;
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            transition: 1s;
+        }
+        .row:hover{
+            transform: scale(0.9);
+        }
+        .role{
+            margin: 10px;
+            margin-right: 160px;
+            justify-content: space-evenly;
+            
+            
+        }
+         .img1{
+            border-radius: 50% ;
+            border: 1px solid black;
+            margin-right: 20px;
+            margin-left: 70px;
+         }
+         .position{
+            display: flex;
+            justify-content: space-evenly;
+        
+         }
+        
+         .rel{
+            position: relative;
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            transition: 1s;
+         }
+         .rel:hover{
+            transform: scale(0.9);
+         }
+         .ro{
+            background-color:green;
+         }
+         .con{
+            position: relative;
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            transition: 1s;
+         }
+         .con:hover{
+            transform: scale(0.9);
+         }
+         .content1{
+            position: relative;
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            transition: 1s;
+         }
+         .content1:hover{
+            transform: scale(0.9);
+         }
+
+         .content2{
+            position: relative;
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            transition: 1s;
+         }
+         .content2:hover{
+            transform: scale(0.9);
+         }
+         .main-di{
+            display: flex;
+            justify-content: space-evenly;
+            transition: 1s;
+            
+        }
+        .ii{
+            position: relative;
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            transition: 1s;
+        }
+        .ii:hover{
+            transform: scale(0.9);
+        }
+        .iii{
+            position: relative;
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            transition: 1s;
+        }
+        .iii:hover{
+            transform: scale(0.9);
+        }
+        .ooo{
+            position: relative;
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            transition: 1s;
+        }
+        .ooo:hover{
+            transform: scale(0.9);
+        }
+        .qq{
+            position: relative;
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            transition: 1s;
+        }
+        .qq:hover{
+            transform: scale(0.9);
+        }
+        .main-d{
+            display: flex;
+            justify-content: space-evenly;
+            transition: 1s;
+            padding: 10%;
+        }
+        .ww{
+            position: relative;
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            transition: 1s;
+        }
+        .ww:hover{
+            transform: scale(0.9);
+        }
+        .ee{
+            position: relative;
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            transition: 1s;
+        }
+        .ee:hover{
+            transform: scale(0.9);
+        }
+        .pp{
+            position: relative;
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            transition: 1s;
+        }
+        .pp:hover{
+            transform: scale(0.9);
+        }
+        .mm{
+            position: relative;
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            transition: 1s;
+        }
+        .mm:hover{
+            transform: scale(0.9);
+        }
+        .ugaoo{
+            margin-right: 1300px;
+            /* padding: 20px; */
+        }
+        .bar{
+            margin-right: 500px;
+        }
+        .plant{
+            margin-bottom: -150px;
+            text-decoration: none;
+        }
+        .shop{
+            text-align: center;
+        }
+        
+        .cont{
+            display: flex;
+        }
+       
+
+       
+    </style>
+   
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+
+    <div class="nav">
+             
+        <span > <a href="plant.html" class="plant">PLANT</a></span> 
+        <span> <a href="pots.html" class="plant">POTS&PLANTER</a></span> 
+        <span> <a href="plantcare.html" class="plant">PLANT CARE</a></span> 
+        <span> <a href="gifting.html" class="plant">GIFTING</a></span> 
+        <span></span><a href="" class="plant">BLOG</a></span> 
+        <span><a href="" class="plant">OFFERS</a></span> 
+        <input type="search" id="searchBar" placeholder="Search...">
+        <i class="fas fa-search search-icon"></i> 
+     </div>
+
+<div class="main">
+      <span class="material-symbols-outlined">
+        person
+        </span>
+
+        <span class="material-symbols-outlined">
+            currency_rupee_circle
+            </span>
+
+            <span class="material-symbols-outlined">
+                shopping_cart
+                </span>
+            </div>
+        </div>
+    
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://cdn.shopify.com/s/files/1/0579/7924/0580/files/MonoonPlants.jpg?v=1718193388" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://cdn.shopify.com/s/files/1/0579/7924/0580/files/monsoonSeeds.jpg?v=1718193779" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://cdn.shopify.com/s/files/1/0579/7924/0580/files/MonsoonFertilisers.jpg?v=1718193626" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!-- <div class="as">
+            <img src="https://cdn.shopify.com/s/files/1/0579/7924/0580/files/monsoonSeeds.jpg?v=1718193779" alt="" height="600px" width="1500px"/>
+        </div> -->
+   
+<div class="role">
+
+    
+    <img src="Best_Sellers_2.avif" alt="" height="120px" width="120px" class="img1"/> 
+
+    <img src="easy to care.webp" alt="" height="120px" width="120px" class="img1"/> 
+
+    <img src="XL_Plants_2.avif" alt="" height="120px" width="120px" class="img1"/>
+
+    <img src="Ceramic_Pots.webp" alt="" height="120px" width="120px" class="img1"/>
+
+    <img src="Vegetable_Seeds_2.webp" alt="" height="120px" width="120px" class="img1"/>
+
+    <img src="Fertilisers_2.webp" alt="" height="120px" width="120px" class="img1"/>
+
+    
+</div>
+
+
+
+<h2>Your Best Picks</h2>
+<div class="container">
+    <div class="container-menu">
+  <img src="plant.jpg" alt="" height="300px" width="300px"/>
+  <h2> plant</h2>
+</div>
+ 
+<div class="img">
+    <img src="seed.jpg" alt="" height="300px" width="300px"/>
+  <h2>Seed</h2>
+</div>
+
+<div class="image">
+    <img src="plant care.jpg" alt="" height="300px" width="300px"/>
+  <h2> plant care</h2>
+</div>
+
+<div class="row">
+    <img src="plant part.jpg" alt="" height="300px" width="300px"/>
+    <h2> plant part</h2>
+</div>
+</div>
+
+
+ <h2> Best Seller</h2>
+<div class="position">
+<div class="rel">
+    <img src="https://www.ugaoo.com/cdn/shop/files/Smallpot-164.jpg?v=1704867612&width=375" alt="" height="300px" width="300px"/>
+    <h2> peace lily plant</h2><br> <br>
+    
+    <a href="peace lily plant.html">VIEW PRODUCT</a>
+
+</div>
+
+<div class="con">
+    <img src="https://www.ugaoo.com/cdn/shop/files/DSC_82942.jpg?v=1696240355&width=375" alt="" height="300px" width="300px"/>
+    <h2> Bamboo palm plant</h2><br><br>
+    <a href="Bamboo palm plant.html">VIEW PRODUCT</a>
+</div>
+
+<div class="content1">
+    <img src="https://www.ugaoo.com/cdn/shop/products/LagosPlanter-Grey_f26c8dee-c8ce-4e1a-bec7-86006f560c98.jpg?v=1680418283&width=375" alt="" height="300px" width="300px"/>
+    <h2> Jage plant mini</h2> <br><br>
+    <a href="jage plant mini.html">VIEW PRODUCT</a>
+</div>
+
+<div class="content2">
+    <img src="https://www.ugaoo.com/cdn/shop/files/2_430a864d-f4ed-46d0-b5e6-ff0d55c422db.jpg?v=1706608270&width=375" alt="" height="300px" width="300px"/>
+    <h2>Monstrea Deliciosa plant</h2> <br><br>
+    <a href="Monstrea deleciosa plant.html">VIEW PRODUCT</a>
+
+</div>
+</div> <br>
+
+<h2> New Arrivals</h2>
+<div class="main-di">
+ <div class="ii">
+    <img src="https://www.ugaoo.com/cdn/shop/files/1_4f29125f-320e-4c7d-8ece-79e95021133c.jpg?v=1717152577&width=375" alt="" height="400px" width="300px"/>
+  <h2>Hex Coir Planter-Set Of 2</h2>
+</div>
+
+<div class="iii">
+    <img src="https://www.ugaoo.com/cdn/shop/files/1_d9640b7b-1df3-41a6-a85e-50c3e2323931.jpg?v=1717152329&width=375" alt="" height="400px" width="300px"/>
+<h2>Heart Coir Planter-Set of 2</h2>
+</div>
+
+<div class="ooo">
+    <img src="https://www.ugaoo.com/cdn/shop/files/1_fc354ef9-b142-41bb-ad64-004c8db2064a.jpg?v=1716984103&width=375" alt="" height="400px" width="300px"/>
+    <h2>Tiny Kisses Double</h2>
+</div>
+
+<div class="qq">
+    <img src="https://www.ugaoo.com/cdn/shop/files/1_7ea9e28a-a839-400a-a320-0339df457486.jpg?v=1716978342&width=375" alt="" height="400px" width="300px"/>
+    <h2>Forms Of Love Ceramic Planter</h2>
+</div>
+</div><br><br>
+
+<div class="main-d">
+<div class="ww">
+    <img src="https://www.ugaoo.com/cdn/shop/files/1_c7905f1b-a5b4-4511-86c7-5867065b3710.jpg?v=1716976415&width=375" alt="" height="400px" width="300px"/>
+    <h2>Fallen Ceramic Planter</h2>
+</div>
+
+<div class="ee">
+    <img src="https://www.ugaoo.com/cdn/shop/files/1_af1027de-2080-488d-afbe-cf349eaa92d8.jpg?v=1716970775&width=375" alt="" height="400px" width="300px"/>
+    <h2> Cats and Gods Ceramic Planter</h2>
+</div>
+
+<div class="pp">
+    <img src="https://www.ugaoo.com/cdn/shop/files/1_d5bf840e-b636-4677-8c38-eb188f6c1e46.jpg?v=1716366499&width=375" alt="" height="400px" width="300px"/>
+    <h2>Wooden Plant</h2>
+</div>
+
+<div class="mm">
+    <img src="https://www.ugaoo.com/cdn/shop/files/1_c53ab928-5243-441b-8232-228e59c13233.png?v=1715253087&width=375" alt="" height="400px" width="300px"/>
+    <h2>Shade Net</h2>
+</div>
+
+</div> <br><br>
+
+<div class="mp">
+<h1 class="shop"> Shop A Look</h1>
+<img src="https://www.ugaoo.com/cdn/shop/files/Sitout_Area_Final-2.jpg?v=1691991191" alt="" height="700px" width="1500px"/>
+</div>
+
+
+   
+   
+
+
+
+
+
+</div>
+</div>
+</body>
+</html>

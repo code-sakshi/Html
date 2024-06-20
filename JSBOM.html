@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript BoM</title>
+</head>
+<body>
+    
+    <button> Back</button>
+    <button onclick="forwardbtn()">forward </button>
+    <h2> Javascript BOM</h2>
+    <h2 id="demo"> </h2>
+
+    <a href=" ./Array.html">pagelink</a>
+    <h3 onclick="assignbtn()"> open form</h3>
+      
+    <script>
+        //window
+
+        document.getElementById('demo').innerHTML=window.innerHeight +"px";
+        document.getAnimations('demo').innerHTML=window.innerWidth +"px";
+
+        //screen
+
+        document.getElementById('demo').innerHTML=window.screen.availHeight +"px";
+        document.getElementById('demo').innerHTML=window.screen.availWidth +"px";
+        document.getElementById('demo').innerHTML=window.screen.pixelDepth;
+        document.getElementById('demo').innerHTML=window.screen.colorDepth;
+
+       //location
+
+       document.getElementById('demo').innerHTML=window.location.host;
+       document.getElementById('demo').innerHTML=window.location.hostname;
+       document.getElementById('demo').innerHTML=window.location.pathname;
+       document.getElementById('demo').innerHTML=window.location.href;
+       document.getElementById('demo').innerHTML=window.location.port;
+       document.getElementById('demo').innerHTML=window.location.protocol;
+
+       //nevigation
+
+       document.getElementById('demo').innerHTML=window.navigator.cookieEnabled;
+       document.getElementById('demo').innerHTML=window.navigator.javaEnabled;
+
+       //History
+
+       function forwardbtn()
+       {
+        window.history.forward();
+       }
+
+       function backbtn()
+       {
+        window.history.back();
+       }
+
+       function assignbtn()
+       {
+        window.location.assign("https://www.flipkart.com");
+       }
+    </script>
+
+
+</body>
+</html>

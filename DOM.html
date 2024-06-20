@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript DOM</title>
+    <script>
+        function bodyload()
+        {
+            window.document.images[1].src ="https://cdn.pixabay.com/photo/2023/09/30/17/13/coffee-beans-8286087_1280.jpg";
+            window.document.images[0].src="https://cdn.pixabay.com/photo/2024/02/23/19/37/squirrel-8592682_640.jpg";
+            window.document.forms[0].elements[0].value="sakshi"
+            window.document.forms[1].elements[0].value="Admin123";
+            window.document.forms[0].elements[1].value="Register";
+            window.document.forms[1].elements[1].value="Login";
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <h2>Javascript Document Object Model</h2>
+    <h2>DOM Hierarchy</h2>
+
+    <img border="1" height="200px" width="200px";>
+    <img border="1" height="200px" width="200px">
+
+    <form>
+        <h3>Registration Form</h3>
+        <input type="text" name="username">
+        <input type="button">
+    </form>
+
+    <form>
+        <h3>Registration Form</h3>
+        <input type="text" name="username">
+        <input type="button">
+    </form>
+
+</body>
+</html>

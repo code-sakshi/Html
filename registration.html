@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        /*Element selector*/
+        h2{
+            background-color: blueviolet;
+            border:solid;
+        }
+        
+    </style>
+</head>
+<body bgcolor="lightblue">
+    <center><h2> Registration Form</h2></center>
+    <br>
+    <form>
+        <label> Firstname</label>
+        <input type="text" name="firstname" size="15"/><br><br>
+
+        <label> Middlename </label>
+        <input type="text" name="Middlename" size="15"/><br><br>
+
+        <label> Lastname</label>
+        <input type="text" name="lastname" size="15"/> <br><br>
+
+        <label>DOB :</label>
+        <input type="date" id="date" name="DOB">  <br> <br>
+
+        Address :
+        <br>
+        <textarea cols="80" rows="5" name="address" value="address" required> </textarea>  <br> <br>
+        
+        Email:
+        <input type="email" placeholder="Enter gmail" id="email" name="email" required> <br> <br>
+
+        <label>Cast:</label>
+        <select>
+            <option value="open">open</option>
+            <option value="VJNT">VJNT</option>
+            <option value="OBC">OBC</option>
+            <option value="SC">SC</option>
+            <option value="ST">ST</option>
+            <option value="OTHER">OTHER</option>
+        </select>  <br> <br>
+
+       <label>password:<span style="color: red;" >*</span></label>
+        <input type="password" placeholder="Enter password" name="pass" required>  <br><br>
+
+    </select>
+    <h2><label>Gender</label></h2>
+   <br>
+   <input type="radio"  id="male"name="gender" value="male"/>male<br>
+   <input type="radio" id="female" name="gender" value="female"/>female<br>
+   
+   
+   <br> <br>
+   <label>phone</label>
+   <input type="text" name="country code" value="+91" size="2"/>
+   <input type="text" name="phone" size="10"/><br><br>
+
+        <label></label>
+        <h2> select language :</h2>
+      <input type="checkbox" id="java" name="language" value="java">
+      <label for="java"> java language</label> <br> <br>
+      
+      <input type="checkbox" id="CSS" name="language" value="css">
+      <label for="CSS">css language</label> <br> <br>
+
+      <input type="checkbox" id="HTML" name="language" value="html">
+      <label for="html"> html language</label> <br> <br>
+
+        <label> Course</label>
+        <select>
+            <option value="course">course</option>
+            <option value="BCA">BCA</option>
+            <option value="BBA">BBA</option>
+            <option value="B.TECH">B.TECH</option>
+            <option value="MBA">MBA</option>
+            <option value="MCA">MCA</option>
+            <option value="M.TECH">M.TECH</option>
+            <br> <br>
+            <input type="button" value="cancel">
+        
+        <input type="submit">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript usingClassName</title>
+    <script>
+        function bodyload()
+        {
+          let paymethods = document.getElementsByClassName("pay");
+          alert("payment methods ="+ paymethods.length);
+
+        }
+    </script>
+</head>
+<body>
+
+   <button  onclick="bodyload()"> No of Payment Methods</button>
+    <fieldset>
+        <legend> Payment Mehtods :</legend>
+        <input type="radio" class="pay"> UPI
+        <input type="radio" class="pay"> COD
+        <input type="radio" class="pay"> DEBIT
+        <input type="radio" class="pay-check"> CREDIT
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM UsingID  </title>
+    <script>
+        function bodyload()
+        {
+            document.getElementById('img1').src="https://cdn.pixabay.com/photo/2024/02/24/20/54/books-8594725_640.jpg";
+            document.getElementById('btnreg').value="Register";
+
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <h2>DOM usingID</h2>
+     
+    <img border="1" height="200px" width="200px" id="img1">
+    <img border="1" height="200px" width="200px" id="img2">
+
+    <form>
+        <h3>Registration Form</h3>
+        <input type="text" name="username">
+        <input type="button" id="btnreg">
+    </form>
+
+    <form>
+        <h3>Registration Form</h3>
+        <input type="text" name="username">
+        <input type="button" id="btnlogin">
+    </form>
+</body>
+</html>

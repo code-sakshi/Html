@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Alert Boxes </title>
+</head>
+<body>
+    
+    <h2> Javascript Alert</h2>
+    <button onclick="alertbtn()"> Save</button>
+    <button onclick="deletebtn()"> Delete</button>
+    <button onclick="promptbox"> Enter name</button>
+    <p id="file"> </p>
+
+    <Script>
+
+        //Alert Box
+        function alertbtn()
+        {
+            window.alert(" Your file has been saved");
+        }
+        //confrim Box
+        //confrim("sometext");
+
+        function deletebtn()
+        {
+            if(confrim("YOu want to delete this file"))
+            {
+                document.getElementById("file").innerHTML= "File Deleted";
+
+            }
+            else{
+                document.getElementById("file").innerHTML=" Cancelled the Process";
+            }
+        }
+
+        // prompt Box
+        // prompt ("sometext"," ");
+
+        function promptbox()
+        {
+            let user = prompt("Enter your Name"," ");
+            if(user == null )
+            {
+                document.getElementById('file').innerHTML= "Enter your name again";
+            }
+            else{
+                document.getElementById("file").innerHTML = "Welcome "+user+" to ourpage"
+                }
+        }
+
+    </Script>
+</body>
+</html>

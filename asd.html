@@ -1,0 +1,117 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+      <title>HTML FROM</title>
+        </head>
+
+        <body>
+        <center><h2> Registration Form</h2></center>
+        <from>
+            <filedset>
+                <legend> Personal Details</legend>
+                <label> username:</label>
+                <input type="text" id="Username" name="username">  <br>  <br>
+
+                <label>password<span style="color: red;">*</span>: </label>
+                <input type="password" id="pass" name="password" autofocus requried> <br> <br>
+
+                <label> Email ID : </label>
+                <input type="email" id="mail" name="EMAILID" placeholder="enter MailId" ><br> <br>
+
+                <label> address : </label>
+                <textarea rows="5" cols="30"></textarea> <br> <br>
+
+                <label> DOB : </label>
+                <input type="date" id="date" name="DOB"> <br> <br>    
+                
+                <label> Mobile</label>
+                <input type="tel" id="mobile" name="mobile" minlength="10" maxlength="10" pattern="[0-9]">
+                        </filedset>
+
+            <label> </label>
+            <input type="week">
+            <h2> Select Language : </h2>
+
+            <input type="checkbox" id="java" name="Language"  value="java">
+            <label for="java"> java language</label> <br>
+            <input type="checkbox" id="html" name="language" value="html">
+            <label for="html">HTML language</label> <br>
+            <input type="checkbox" id="css" name="language" value="css">
+            <label for="css">CSS language</label> <br>
+            
+            <h2>Gender</h2>
+
+            <input type="ratio" id="male" name="gender" value="male">  <br>
+            <input type="ratio" id="female" name="gender" value="female">
+            <br>  <br>
+
+            
+
+            <label> Batch Time : </label>
+            <select id="batchtime" name="BatchTime">
+                <option>10am - 11am</option>
+                <option>11am - 12am</option>
+                <option>12am - 01pm</option>
+                <option>01pm - 02pm</option>
+                <option>02pm - 03pm</option>
+           
+            </select> <br> <br>
+            <label>College Name : </label>
+            <input list="clgname" name="collegename">
+            <datalist id="clgname">
+                <option>AB college</option>
+                <option>XY college</option>
+                <option>MN college</option>
+                <option>PQR college</option>
+                <option>XYZ college</option>
+                <option>LMN college</option>
+                <option>DEF college</option>
+            </datalist>
+            <br> <br>
+            <input type="hidden" id="hide" name="hide" value="1234">
+
+            <label>Upload Document:</label>
+            <input type="file" name="Document" multiple>
+            <br> <br>
+
+            <label>Batch Duration(Months):</label>
+
+            <input type="button" value="cancel">
+
+            <input type="submit">
+
+            <hr>
+            
+<center>
+    <table>
+    <tr>
+        <td><label>username</label></td>
+        <td><input></td>
+    </tr>
+    <tr>
+    <td><label> login </label></td>
+    <td><input></td>
+    </tr>
+    <tr>
+       <td><label>password</label></td>
+       <td><input></td>
+    </tr>
+    <tr>
+       <td><label>Email</label></td>
+       <td><input></td>
+    </tr>
+    <tr>
+        <td><label>DOB </label></td>
+        <td><input> </td>
+    </tr>
+    <tr>
+       <td><label>Mobile</label></td>
+       <td><input></td>
+    </tr></table>
+
+ </center>
+ </from>
+ </body>
+ </html>
+ </head>
